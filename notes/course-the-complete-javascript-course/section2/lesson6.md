@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Lesson 6 - Hello World!
 
 - Open Chrome, go into Developer Tools > Console and type

@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Lesson 7 - A Brief Introduction to JavaScript
 
 **What is JavaScript?** A high-level, object-oriented, multi-paradigm programming language.

@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Lesson 8 - Linking a JavaScript File
 
 You can write JavaScript code within the HTML file under the head section.

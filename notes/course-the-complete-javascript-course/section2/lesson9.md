@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Lesson 9 - Values and Variable
 
 I Will use a 'Person' for the example. eg. first name, last name, age, height etc
@@ -42,16 +46,39 @@ let firstName = "Matilda";
 
 - Camel Case: Words are joined without spaces, with the first letter of each word (except the first) being uppercase. Example: `firstName` this is the standard in the JavaScript world.
 - Pascal Case: Similar to camel case but all words start with an upper case. Example `FirstName`
-- Kebab Case: Words are joined with a hyphen. Example `first-name`. This is often used for URLs and file names.
-- Snake Case: Similar to Kebab Case but words are joined with and underscore(\_). Example `first_name` this is more popular in other languages like Ruby.
-
-You can use any you want, just keep it consistent. Be aware that Camel Case if most common in JavaScript.
+- Snake Case: Words are joined with an underscore(\_). Example `first_name` this is more popular in other languages like Ruby.
 
 There are also some hard rules that you must also use.
-You cannot start a variable with a number.
+You cannot start a variable with a number. HOWEVER it can contain numbers.
 
 ```js
 let firstName = "Jonas";
+let name1 = "Matilda";
 //error-next-line
 let 1stName = "Bob";
 ```
+
+Variables can only contain numbers, letters, underscore or dollar ($)
+
+For example if I do `let jonas&bob = "JB";` it will error out with a SyntaxError. It would be best to use underscore `let jonas_bob = "JB";`
+
+Other syntax errors could be that you used a [Reserved Keyword](https://www.w3schools.com/js/js_reserved.asp) as your variable name.
+
+```js
+//error-next-line
+let new = "New Car";
+```
+
+Another convention is you should never start a variable with an uppercase letter. It not illegal. its just we use this for a specific case which is Object-Oriented Programming (More in later Lessons).
+
+Variable that are in all Uppercase are reserved for constants (Variable that do not change). eg
+
+```js
+let PI = 3.1415;
+```
+
+For the final convention make sure your name is descriptive. It help you understand your code better when you comeback to it.
+
+### Summarize
+
+A `variable` is a named box that we can store a `value` in.

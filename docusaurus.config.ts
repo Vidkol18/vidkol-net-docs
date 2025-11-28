@@ -80,11 +80,12 @@ const config: Config = {
     ],
   ],
   plugins: [...contentPlugins],
-
+  themes: ["@docusaurus/theme-mermaid", "@docusaurus/theme-live-codeblock"],
   themeConfig: {
     colorMode: {
       respectPrefersColorScheme: true,
     },
+
     navbar: {
       title: "Homepage",
       logo: {
@@ -137,6 +138,17 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: [
+        "java",
+        "gradle",
+        "toml",
+        "groovy",
+        "kotlin",
+        "javascript",
+        "json",
+        "json5",
+        "properties",
+      ],
       magicComments: [
         {
           className: "theme-code-block-error-line",
@@ -148,6 +160,7 @@ const config: Config = {
     markdown: {
       mermaid: true,
     },
+    themes: ["@docusaurus/theme-live-codeblock"],
   } satisfies Preset.ThemeConfig,
 };
 
