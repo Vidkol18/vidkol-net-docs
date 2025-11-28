@@ -28,7 +28,7 @@ const createContentDocs = (id: string, label: string) => {
   });
 
   footerItems.push({
-    to: `/${id}/docs`,
+    to: `/${id}/`,
     label: label,
   });
 };
